@@ -3,7 +3,8 @@
 import os
 import sys
 
-
+# Запустите сервер python manage.py runserver
+# Откройте в вашем браузере http://127.0.0.1:8000/
 def main():
     """Run administrative tasks."""
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'UrbanDjango.settings')
