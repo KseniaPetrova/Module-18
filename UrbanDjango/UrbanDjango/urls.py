@@ -17,9 +17,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from task2.views import classTemplate, funcTemplate
+from task3.views import webpage_homepage, webpage_store, webpage_cart
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', classTemplate),
+    path('classTemplate/', classTemplate),
     path('func/', funcTemplate.as_view()),
+    path('', webpage_homepage),
+    path('steam_home/steam_store/', webpage_store),
+    path('steam_home/steam_cart/', webpage_cart),
 ]
