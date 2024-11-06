@@ -6,7 +6,7 @@ python manage.py migrate
 
 создание приложения
 cd UrbanDjango
-python manage.py startapp task3
+python manage.py startapp task4
 
 запуск сервера
 cd UrbanDjango
