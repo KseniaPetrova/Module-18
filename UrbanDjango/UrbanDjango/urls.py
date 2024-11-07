@@ -18,6 +18,7 @@ from django.contrib import admin
 from django.urls import path
 from task2.views import classTemplate, funcTemplate
 from task4.views import webpage_homepage, webpage_store, webpage_cart
+from task5.views import sign_up_by_django, sign_up_by_html
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -26,4 +27,6 @@ urlpatterns = [
     path('', webpage_homepage),
     path('steam_home/steam_store/', webpage_store),
     path('steam_home/steam_cart/', webpage_cart),
+    path('django_sign_up/', sign_up_by_django),
+    path('html_sign_up/', sign_up_by_html),
 ]
